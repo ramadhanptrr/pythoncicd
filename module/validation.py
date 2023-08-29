@@ -4,6 +4,5 @@ business_key = os.getenv("business_key")
 print("validation starts")
 if (business_key is None) : 
     print('passed')
-    print(business_key)
 else :
-    print("Required")
+    sys.exit('Required')
