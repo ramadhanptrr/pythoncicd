@@ -3,6 +3,7 @@ import sys
 business_key = os.getenv("business_key")
 print("validation starts")
 if (business_key is None) : 
-    print('passed')
-else :
     sys.exit('Required')
+else :
+    print('passed')
+    
