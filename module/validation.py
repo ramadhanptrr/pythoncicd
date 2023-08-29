@@ -2,7 +2,7 @@ import os
 import sys
 business_key = os.getenv("business_key")
 print("validation starts")
-if (len(business_key) == 0) : 
-    sys.exit("Required")
-else :
+if (len(business_key) != 0) : 
     print('passed')
+else :
+    sys.exit("Required")
