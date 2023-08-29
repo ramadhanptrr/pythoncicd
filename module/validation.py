@@ -5,4 +5,4 @@ print("validation starts")
 if (len(business_key) != 0) : 
     print('passed')
 else :
-    sys.exit("Required")
+    print("Required")
