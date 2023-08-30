@@ -1,7 +1,7 @@
 pipeline {
   agent any
   stages {
-    stage('validation') {
+    stage('validation_step') {
       steps {
         sh 'python3 ./module/validation.py'
       }
