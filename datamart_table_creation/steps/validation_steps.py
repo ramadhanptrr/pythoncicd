@@ -17,6 +17,7 @@ validation_results = ValidationResults(rule)
 
 if validation_results is None:
     print('pass')
+    sys.exit(0)
 else:
     sys.exit(validation_results)
 
