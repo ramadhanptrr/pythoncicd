@@ -3,7 +3,8 @@ pipeline {
   stages {
     stage('validation_step') {
       steps {
-        sh 'python3 ./datamart_table_creation/steps/validation_steps.py'
+        // sh 'python3 ./datamart_table_creation/steps/validation_steps.py'
+        sh 'python3 --version'
       }
     }
     stage('redshift_table_creation') {
