@@ -11,9 +11,7 @@ rule = [
     Validator('table_type',input_value["table_type"]).set_required().set_dropdown_list(["presentations"])
 ]
 
-validation_results = ValidationResults(rule)
-
-if validation_results is not None:
+if ValidationResults(rule) is not None:
     sys.exit(validation_results)
 else:
     print('pass')
