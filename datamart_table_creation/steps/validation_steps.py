@@ -1,8 +1,8 @@
 import sys
 import os
 
-from .datamart_module.input_handler import InputHandler
-from .datamart_module.validator import Validator,ValidationRule
+from datamart_module.input_handler import InputHandler
+from datamart_module.validator import Validator,ValidationRule
 
 #retrieve input
 input_value = InputHandler.InputValue()
