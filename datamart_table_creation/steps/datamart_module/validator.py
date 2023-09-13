@@ -62,7 +62,7 @@ class Validator:
         if self.min_length is not None and len(str(self.value)) < self.min_length:
             errors.append(f"ErrorValidator - {self.field_name} must be at least {self.min_length} characters long.")
 
-        if self.valid_list:
+        if self.valid_list and self.value is not None:
             try:
                 json.loads(self.value)
             except ValueError as e:
