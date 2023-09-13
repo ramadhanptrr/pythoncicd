@@ -82,5 +82,5 @@ class ValidationRule:
             errors = rule.validate()
             self.validation_results.extend(errors)
 
-        def run(self):
-            return '\n'.join(self.validation_results)
+    def run(self):
+        return '\n'.join(self.validation_results)
