@@ -1,6 +1,6 @@
 import sys
-from datamart_module.input_handler import InputHandler
-from datamart_module.validator import Validator,ValidationRule
+from ..datamart_module.input_handler import InputHandler
+from ..datamart_module.validator import Validator,ValidationRule
 
 #retrieve input
 input_value = InputHandler.InputValue()
@@ -20,4 +20,3 @@ if validation_results.run() :
     sys.exit(validation_results.run())
 else:
     print('validation pass')
-
