@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('validation_step') {
       steps {
-        sh 'python3 ./datamart_table_creation/steps/validation_steps.py'
+        sh 'python3 .jenkins/datamart_table_creation/steps/validation_steps.py'
       }
     }
     stage('redshift_table_creation') {
