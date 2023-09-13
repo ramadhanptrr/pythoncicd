@@ -53,7 +53,7 @@ class Validator:
     def validate(self):
         errors = []
 
-        if self.required and (self.value is None or not str(self.value).strip()):
+        if self.required and self.value is None:
             errors.append(f"ErrorValidator - {self.field_name} is required.")
 
         if self.max_length is not None and len(str(self.value)) >= self.max_length:
@@ -64,7 +64,7 @@ class Validator:
 
         if self.valid_list:
             try:
-                json.loads(self.value.strip())
+                json.loads(self.value)
             except ValueError as e:
                 errors.append(f"ErrorValidator - {self.field_name} is not a valid list")
 
