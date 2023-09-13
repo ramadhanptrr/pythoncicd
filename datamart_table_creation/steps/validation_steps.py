@@ -18,7 +18,7 @@ rules = [
 validation_results = ValidationRule(rules)
 
 if validation_results.run() :
-    sys.exit(validation_results)
+    sys.exit(validation_results.run())
 else:
     print('validation pass')
 
