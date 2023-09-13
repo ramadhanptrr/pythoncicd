@@ -1,7 +1,7 @@
 import sys
 import os
 from datamart_module.input_handler import InputHandler
-from datamart_module.validator import Validator,ValidationResults
+from datamart_module.validator import Validator,ValidationRule
 
 #retrieve input
 input_value = InputHandler.InputValue()
@@ -13,7 +13,7 @@ rule = [
 
 validate_input = ValidationRule(rule)
 
-if validate_input.run :
+if validate_input.run() :
     sys.exit(validation_results)
 else:
     print('validation pass')
