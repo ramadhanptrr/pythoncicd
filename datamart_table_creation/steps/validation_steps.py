@@ -13,7 +13,7 @@ rule = [
 
 validation_results = ValidationRule(rule)
 
-if validate_input.run() :
+if validation_results.run() :
     sys.exit(validation_results)
 else:
     print('validation pass')
