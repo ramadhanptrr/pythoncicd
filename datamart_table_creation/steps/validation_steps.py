@@ -13,11 +13,11 @@ rule = [
 
 validation_results = ValidationResults(rule)
 
-print('pass')
 
-# if validation_results is not None:
-#     sys.exit(validation_results)
-# else:
-#     print('pass')
+
+if validation_results is None:
+    print('pass')
+else:
+    sys.exit(validation_results)
 
 
