@@ -73,7 +73,7 @@ class Validator:
 
         return errors
 
-class ValidationResults:
+class ValidationRule:
     def __init__(self, rules):
         self.rules = rules
         self.validation_results = []
@@ -82,5 +82,5 @@ class ValidationResults:
             errors = rule.validate()
             self.validation_results.extend(errors)
 
-    def __str__(self):
-        return '\n'.join(self.validation_results)
+        def run(self):
+            return '\n'.join(self.validation_results)
