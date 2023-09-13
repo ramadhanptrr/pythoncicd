@@ -1,6 +1,4 @@
 import sys
-module_directory = '../datamart_module'
-sys.path.append(module_directory)
 from datamart_module.input_handler import InputHandler
 from datamart_module.validator import Validator,ValidationRule
 
