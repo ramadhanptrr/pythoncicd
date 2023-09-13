@@ -11,7 +11,7 @@ rule = [
     Validator('table_type',input_value["table_type"]).set_required().set_dropdown_list(["presentations"])
 ]
 
-validate_input = ValidationRule(rule)
+validation_results = ValidationRule(rule)
 
 if validate_input.run() :
     sys.exit(validation_results)
