@@ -26,8 +26,10 @@ import json
 # print(os.getenv('incremental_key'))
 # print(type(os.getenv('incremental_key')))
 incr_key = os.getenv('incremental_key')
-try:
-    json.loads(incr_key)
-except ValueError as e:
-    # errors.append(f"ErrorValidator - {self.field_name} is not a valid list")
-    print(e)
+
+if incr_key is not None :
+    try:
+        json.loads(incr_key)
+    except ValueError as e:
+        # errors.append(f"ErrorValidator - {self.field_name} is not a valid list")
+        print(e)
