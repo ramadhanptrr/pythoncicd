@@ -1,4 +1,5 @@
 import sys
+sys.path.append('./')
 from datamart_module.input_handler import InputHandler
 from datamart_module.validator import Validator,ValidationRule
 
