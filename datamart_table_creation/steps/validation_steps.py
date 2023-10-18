@@ -26,7 +26,7 @@ import os
 x = os.getenv('redshift_ddl')
 print(x)
 def test(x):
-        try:
+    try:
         x.get('schema')
         return True
     except:
