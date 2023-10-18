@@ -24,6 +24,7 @@ import os
 #     print('validation pass')
 
 x = os.getenv('redshift_ddl')
+print(x)
 def test(x):
         try:
         x.get('schema')
