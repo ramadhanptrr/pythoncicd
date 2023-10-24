@@ -33,5 +33,3 @@ import os
 #         return "ErrorValidator - is not a valid dictionary"
 # print(test(x))
 
-print(os.environ.get('gitlab_local_rama'))
-
