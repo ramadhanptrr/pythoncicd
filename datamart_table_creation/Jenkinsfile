@@ -6,7 +6,7 @@ pipeline {
         sh 'python3 ./datamart_table_creation/steps/validation_steps.py'
       }
     }
-    stage('validation_step') {
+    stage('git_operations') {
       steps {
         sh 'python3 ./datamart_table_creation/steps/git_operations.py'
       }
