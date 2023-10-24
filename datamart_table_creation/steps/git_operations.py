@@ -8,3 +8,5 @@ def clone():
     local_path = "/var/jenkins_home/workspace/datamart_automation/repositories"
     repo = git.Repo.clone_from(gitlab_repo_url, local_path)
     return repo
+
+clone()
