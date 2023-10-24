@@ -33,5 +33,5 @@ import os
 #         return "ErrorValidator - is not a valid dictionary"
 # print(test(x))
 
-print(os.environ.get('redshift_db_password'))
+print(os.environ.get('gitlab_local_rama'))
 
