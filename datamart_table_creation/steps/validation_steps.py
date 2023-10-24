@@ -23,12 +23,15 @@ import os
 # else:
 #     print('validation pass')
 
-x = os.getenv('redshift_ddl')
-print(x)
-def test(x):
-    try:
-        x.get('schema')
-        return True
-    except:
-        return "ErrorValidator - is not a valid dictionary"
-print(test(x))
+# x = os.getenv('redshift_ddl')
+# print(x)
+# def test(x):
+#     try:
+#         x.get('schema')
+#         return True
+#     except:
+#         return "ErrorValidator - is not a valid dictionary"
+# print(test(x))
+
+print(os.environ.get('redshift_db_password'))
+
