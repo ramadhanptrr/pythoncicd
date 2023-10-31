@@ -6,7 +6,7 @@ from utils.yaml_reader import YAMLConfigLoader
 from datamart_module.input_handler import InputHandler
 
 #source and target folder
-config = YAMLConfigLoader('../config.yaml')
+config = YAMLConfigLoader('./config.yaml')
 input_value = InputHandler.InputValue()
 config.load_config()
 repository_folder = config.key('path_cfg')["repo_dir"]
