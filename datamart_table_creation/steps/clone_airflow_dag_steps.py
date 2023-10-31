@@ -7,12 +7,6 @@ from datamart_module.input_handler import InputHandler
 
 #source and target folder
 config = YAMLConfigLoader('./config.yaml')
-# input_value = InputHandler.InputValue()
-# table_name = input_value['table_name']
-# new_filename = f"load_process_to_pl_{table_name}_dag.py"
-# destination_directory = config.key('path_cfg')["repo_pl_dir"]
-# master_filename = config.key('path_cfg')["pl_master_filename"]
-# master_directory = config.key('path_cfg')["dag_master_directory"]
 config.load_config()
 repository_folder = config.key('path_cfg')["repo_dir"]
 branch = config.key('airflow_dag_repo')["branch"]

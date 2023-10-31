@@ -67,7 +67,8 @@ class GitManager():
             print(f"git add [{new_file}]")
             repo.index.commit("DE Automation")
             print(f"pushing {new_file}")
-            return repo.remotes.origin.push(refspec=f"{branch}:{branch}")
+            repo.remotes.origin.push(refspec=f"{branch}:{branch}")
+            return True
         except Exception as e:
             print(f"an error occured - {e}")
             return False
