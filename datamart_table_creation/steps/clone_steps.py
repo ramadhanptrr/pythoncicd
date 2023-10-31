@@ -1,6 +1,6 @@
 import sys
-from push import GitManager
-from file_handler import FileOperations
+from datamart_module.git_module import GitManager
+from datamart_module.file_handler import FileOperations
 from utils.yaml_reader import YAMLConfigLoader
 from datamart_module.input_handler import InputHandler
 
