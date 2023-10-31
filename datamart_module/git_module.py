@@ -6,7 +6,7 @@ from utils.yaml_reader import YAMLConfigLoader
 #pip install GitPython
 class GitConfig:
     def __init__(self):
-        self.config_loader = YAMLConfigLoader('../config.yaml')
+        self.config_loader = YAMLConfigLoader('./config.yaml')
 
     def config_getter(self,repositories)->dict:
         self.config_loader.load_config()
