@@ -5,12 +5,12 @@ pipeline {
       steps {
         sh 'python3 ./datamart_table_creation/steps/clone_steps.py'
       }
-    },
+    }
     stage('generate-dag') {
       steps {
         sh 'python3 ./datamart_table_creation/steps/generate_dag.py'
       }
-    },
+    }
     stage('push-dag') {
       steps {
         sh 'python3 ./datamart_table_creation/steps/push_dag.py'
