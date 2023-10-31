@@ -18,5 +18,7 @@ new_filename = f'load_process_to_pl_{table_name}_dag.py'
 if not FileOperations(destination_directory).is_file_exists(new_filename):
     FileOperations(destination_directory).copy(f"{master_directory}/{master_filename}")
     FileOperations(destination_directory).rename(master_filename,new_filename)
+    GitManager('airflow_dag_repo').push(f"presentations/{new_filename}", branch)
+
 else:
     sys.exit('file already exists')
