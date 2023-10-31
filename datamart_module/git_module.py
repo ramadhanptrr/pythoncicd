@@ -21,7 +21,7 @@ class GitConfig:
             base_config["username"] = self.config_loader.key('airflow_dag_repo')["username"]
             base_config["local_path"] = self.config_loader.key('path_cfg')["repo_dir"]
             base_config["endpoint"] = self.config_loader.key('airflow_dag_repo')["endpoint"]
-            base_config["token"] = self.config_loader.key('airflow_dag_repo')["token"]
+            base_config["token"] = os.environ.get('gitlab_local_rama')
         else:
             raise NotImplementedError("Repositories not supported, please check the config")
         return base_config
