@@ -1,7 +1,7 @@
 pipeline {
   agent any
   stages {
-    stage('airflow-dags-clone') {
+    stage('clone-airflow-dags') {
       steps {
         sh 'python3 ./datamart_table_creation/steps/clone_steps.py'
       }
