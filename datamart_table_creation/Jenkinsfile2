@@ -1,0 +1,10 @@
+pipeline {
+  agent any
+  stages {
+    stage('pull') {
+      steps {
+        sh 'python3 ./datamart_table_creation/steps/git_operations.py'
+      }
+    }
+  }
+}
