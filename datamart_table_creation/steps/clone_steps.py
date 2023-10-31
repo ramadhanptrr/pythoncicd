@@ -14,7 +14,7 @@ master_filename = config.key('path_cfg')["pl_master_filename"]
 master_directory = config.key('path_cfg')["dag_master_directory"]
 branch = config.key('airflow_dag_repo')["branch"]
 table_name = input_value['table_name']
-new_filename = fload_process_to_pl_{table_name}_dag.py'
+new_filename = f"load_process_to_pl_{table_name}_dag.py"
 
 #check & drop if folder exists
 if FileOperations(repository_folder).is_directory_exists() :
