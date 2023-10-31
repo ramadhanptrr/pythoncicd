@@ -1,0 +1,10 @@
+airflow_dag_repo:
+  username: ramadhanputraaf
+  endpoint: gitlab.com/ramadhanputraaf/my-stage.git
+  branch: stage-release
+
+path_cfg:
+  dag_master_directory: /var/jenkins_home/workspace/clonepush/master_dag
+  pl_master_filename: pl_cross_dag.py
+  repo_dir: /var/jenkins_home/workspace/clonepush/repo
+  repo_pl_dir: /var/jenkins_home/workspace/clonepush/repo/presentations
