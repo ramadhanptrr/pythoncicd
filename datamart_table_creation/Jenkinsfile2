@@ -13,7 +13,7 @@ pipeline {
     },
     stage('push-dag') {
       steps {
-        sh 'python3 ./datamart_table_creation/steps/git_operations.py'
+        sh 'python3 ./datamart_table_creation/steps/push_dag.py'
       }
     }
   }
