@@ -1,4 +1,5 @@
 import sys
+sys.path.append('./')
 from datamart_module.git_module import GitManager
 from datamart_module.file_handler import FileOperations
 from utils.yaml_reader import YAMLConfigLoader
