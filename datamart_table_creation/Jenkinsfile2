@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('clone-airflow-dags') {
       steps {
-        sh 'python3 ./datamart_table_creation/steps/clone_airflow_dags_steps.py'
+        sh 'python3 ./datamart_table_creation/steps/clone_airflow_dag_steps.py'
       }
     }
     stage('push-airflow-dags') {
