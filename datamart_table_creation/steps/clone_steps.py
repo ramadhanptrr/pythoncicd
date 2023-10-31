@@ -11,7 +11,7 @@ config = YAMLConfigLoader('./config.yaml')
 # table_name = input_value['table_name']
 # new_filename = f"load_process_to_pl_{table_name}_dag.py"
 config.load_config()
-# repository_folder = config.key('path_cfg')["repo_dir"]
+repository_folder = config.key('path_cfg')["repo_dir"]
 # destination_directory = config.key('path_cfg')["repo_pl_dir"]
 # master_filename = config.key('path_cfg')["pl_master_filename"]
 # master_directory = config.key('path_cfg')["dag_master_directory"]
