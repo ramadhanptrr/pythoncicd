@@ -1,2 +1,2 @@
 import os 
-print(os.environ.get("root_path"))
+print(os.environ.get("ROOT_PATH"))
